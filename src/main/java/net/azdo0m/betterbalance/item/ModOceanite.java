@@ -7,13 +7,20 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import static net.minecraft.world.item.Items.registerBlock;
 
 public class ModOceanite {
     public static void registerOceanite() {
         BetterBalance.LOGGER.info("Registering Oceanite Items for " + BetterBalance.MOD_ID);
     }
+        //BLOCKS
+    public static final Item OCEANITE_BLOCK = register("oceanite_block");
 
-    // ITEMS
+        // INGREDIENTS
     public static final Item OCEANITE_INGOT = register("oceanite_ingot");
         // ARMOR
     public static final Item OCEANITE_HELMET = register("armor/oceanite_inventory_helmet");

@@ -7,7 +7,13 @@ import net.minecraft.world.item.Items;
 
 public class ModItemsGroups {
     public static void registerModItems(){
-        // INGREDIENTS (Oceanite ingot)
+
+        // BLOCKS
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register(content -> {
+            content.addAfter(Items.NETHERITE_BLOCK, ModOceanite.OCEANITE_BLOCK);
+        });
+
+        // INGREDIENTS
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS).register(entries -> {
             entries.addAfter(Items.NETHERITE_INGOT, ModOceanite.OCEANITE_INGOT);
         });
