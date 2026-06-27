@@ -1,24 +1,28 @@
 package net.azdo0m.betterbalance.item;
 
 import net.azdo0m.betterbalance.BetterBalance;
+import net.fabricmc.fabric.mixin.datagen.loot.BlockLootSubProviderMixin;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-
+import static net.azdo0m.betterbalance.BetterBalance.MOD_ID;
 import static net.minecraft.world.item.Items.registerBlock;
 
 public class ModOceanite {
     public static void registerOceanite() {
-        BetterBalance.LOGGER.info("Registering Oceanite Items for " + BetterBalance.MOD_ID);
+        BetterBalance.LOGGER.info("Registering Oceanite Items for " + MOD_ID);
     }
         //BLOCKS
-    public static final Item OCEANITE_BLOCK = register("oceanite_block");
+        public static final Block OCEANITE_BLOCK = registerOceaniteBlock("oceanite_block",
+                new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK))
+        );
 
         // INGREDIENTS
     public static final Item OCEANITE_INGOT = register("oceanite_ingot");
@@ -38,8 +42,23 @@ public class ModOceanite {
 
     // Creation
     private static Item register(String name) {
-        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(BetterBalance.MOD_ID, name));
+        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
         return Registry.register(BuiltInRegistries.ITEM, key, new Item(new Item.Properties().setId(key)));
+    }
+
+    // BLOCK
+    private static Block registerOceaniteBlock(String name, Block block) {
+        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name));
+        Block registeredBlock = Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
+
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
+        Registry.register(BuiltInRegistries.ITEM, itemKey, new BlockItem(registeredBlock, new Item.Properties()));
+        return registeredBlock;
+    }
+
+    private static Item registerOceaniteItem(String name) {
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
+        return Registry.register(BuiltInRegistries.ITEM, itemKey, new Item(new Item.Properties()));
     }
 }
 
