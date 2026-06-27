@@ -1,0 +1,16 @@
+{
+  "item.betterbalance.oceanite_ingot": "Lingot d'Oceanite",
+
+  "item.betterbalance.armor.oceanite_inventory_helmet": "Casque en Oceanite",
+  "item.betterbalance.armor.oceanite_inventory_chestplate": "Plastron en Oceanite",
+  "item.betterbalance.armor.oceanite_inventory_leggings": "Jambières en Oceanite",
+  "item.betterbalance.armor.oceanite_inventory_boots": "Bottes en Oceanite",
+
+  "item.betterbalance.weapons-tools.oceanite_sword": "Épée en Oceanite",
+  "item.betterbalance.weapons-tools.oceanite_spear": "Lance en Oceanite",
+
+  "item.betterbalance.weapons-tools.oceanite_shovel": "Pelle en Oceanite",
+  "item.betterbalance.weapons-tools.oceanite_pickaxe": "Pioche en Oceanite",
+  "item.betterbalance.weapons-tools.oceanite_axe": "Hache en Oceanite",
+  "item.betterbalance.weapons-tools.oceanite_hoe": "Houe en Oceanite"
+}

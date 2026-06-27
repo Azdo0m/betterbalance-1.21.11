@@ -1,0 +1,31 @@
+{
+	"required": true,
+	"package": "net.azdo0m.betterbalance.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin",
+
+		"anvil.AnvilLimitMixin",
+		"anvil.AnvilScreenMixin",
+		"anvil.AnvilWitherMixin",
+
+		"entities.ZombieMixin",
+		"entities.SpiderMixin",
+		"entities.ZoglinMixin",
+		"entities.ZombieNautilusMixin",
+		"entities.MagmaCubeMixin",
+
+		"items.ToolDurabilityMixin",
+		"items.ElytraWaterMixin",
+
+		"logic.LibrarianTradeMixin",
+		"logic.EnchantmentHelperMixin",
+		"logic.NetherWoodBurnMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
