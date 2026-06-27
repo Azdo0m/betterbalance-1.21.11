@@ -1,7 +1,6 @@
 package net.azdo0m.betterbalance.item;
 
 import net.azdo0m.betterbalance.BetterBalance;
-import net.fabricmc.fabric.mixin.datagen.loot.BlockLootSubProviderMixin;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -21,7 +20,7 @@ public class ModOceanite {
     }
         //BLOCKS
         public static final Block OCEANITE_BLOCK = registerOceaniteBlock("oceanite_block",
-                new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK))
+                BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)
         );
 
         // INGREDIENTS
@@ -47,18 +46,21 @@ public class ModOceanite {
     }
 
     // BLOCK
-    private static Block registerOceaniteBlock(String name, Block block) {
+    private static Block registerOceaniteBlock(String name, BlockBehaviour.Properties properties) {
         ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name));
-        Block registeredBlock = Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
+        Block registeredBlock = Registry.register(
+                BuiltInRegistries.BLOCK,
+                blockKey,
+                new Block(properties.setId(blockKey))
+        );
 
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
-        Registry.register(BuiltInRegistries.ITEM, itemKey, new BlockItem(registeredBlock, new Item.Properties()));
+        Registry.register(
+                BuiltInRegistries.ITEM,
+                itemKey,
+                new BlockItem(registeredBlock, new Item.Properties().setId(itemKey))
+        );
         return registeredBlock;
-    }
-
-    private static Item registerOceaniteItem(String name) {
-        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
-        return Registry.register(BuiltInRegistries.ITEM, itemKey, new Item(new Item.Properties()));
     }
 }
 
