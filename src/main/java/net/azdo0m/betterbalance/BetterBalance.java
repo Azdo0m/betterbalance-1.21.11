@@ -1,7 +1,8 @@
 package net.azdo0m.betterbalance;
 
+import net.azdo0m.betterbalance.block.ModBlocks;
 import net.azdo0m.betterbalance.item.ModItems;
-import net.azdo0m.betterbalance.item.ModItemsGroups;
+import net.azdo0m.betterbalance.itemgroup.ModItemsGroups;
 import net.azdo0m.betterbalance.item.ModOceanite;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,6 +24,9 @@ public class BetterBalance implements ModInitializer {
 		// Proceed with mild caution.
 		ModItems.registerModItems();
 		ModItemsGroups.registerModItems();
+		ModBlocks.registerModBlocks();
+
+
 		ModOceanite.registerOceanite();
 	}
 }

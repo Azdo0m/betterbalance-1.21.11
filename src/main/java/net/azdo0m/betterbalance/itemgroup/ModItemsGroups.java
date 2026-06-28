@@ -1,6 +1,8 @@
-package net.azdo0m.betterbalance.item;
+package net.azdo0m.betterbalance.itemgroup;
 
-import net.azdo0m.betterbalance.BetterBalance;
+import net.azdo0m.betterbalance.item.ModArmor;
+import net.azdo0m.betterbalance.item.ModItems;
+import net.azdo0m.betterbalance.item.ModOceanite;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
@@ -15,15 +17,15 @@ public class ModItemsGroups {
 
         // INGREDIENTS
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS).register(entries -> {
-            entries.addAfter(Items.NETHERITE_INGOT, ModOceanite.OCEANITE_INGOT);
+            entries.addAfter(Items.NETHERITE_INGOT, ModItems.OCEANITE_INGOT);
         });
 
         // COMBAT
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(entries -> {
-            entries.addAfter(Items.NETHERITE_BOOTS, ModOceanite.OCEANITE_HELMET);
-            entries.addAfter(ModOceanite.OCEANITE_HELMET, ModOceanite.OCEANITE_CHESTPLATE);
-            entries.addAfter(ModOceanite.OCEANITE_CHESTPLATE, ModOceanite.OCEANITE_LEGGINGS);
-            entries.addAfter(ModOceanite.OCEANITE_LEGGINGS, ModOceanite.OCEANITE_BOOTS);
+            entries.addAfter(Items.NETHERITE_BOOTS, ModArmor.OCEANITE_HELMET);
+            entries.addAfter(ModArmor.OCEANITE_HELMET, ModArmor.OCEANITE_CHESTPLATE);
+            entries.addAfter(ModArmor.OCEANITE_CHESTPLATE, ModArmor.OCEANITE_LEGGINGS);
+            entries.addAfter(ModArmor.OCEANITE_LEGGINGS, ModArmor.OCEANITE_BOOTS);
 
             entries.addAfter(Items.NETHERITE_SWORD, ModOceanite.OCEANITE_SWORD);
             entries.addAfter(Items.NETHERITE_SPEAR, ModOceanite.OCEANITE_SPEAR);
