@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "oceanite_ingot",
   "ingredients": [
-    {
-      "item": "betterbalance:oceanite_block"
-    }
+      "betterbalance:oceanite_block"
   ],
   "result": {
     "count": 9,
