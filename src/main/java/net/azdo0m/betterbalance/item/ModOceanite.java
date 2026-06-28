@@ -21,10 +21,6 @@ public class ModOceanite {
         BetterBalance.LOGGER.info("Registering Oceanite Items for " + MOD_ID);
     }
 
-    //BLOCKS
-    public static final Block OCEANITE_BLOCK = registerOceaniteBlock("oceanite_block",
-
-    );
     // INGREDIENTS
     //                    .mapColor(MapColor.COLOR_CYAN)
     //                    .strength(50.0F, 1200.0F)
@@ -45,25 +41,5 @@ public class ModOceanite {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
         return Registry.register(BuiltInRegistries.ITEM, key, new Item(new Item.Properties().setId(key)));
     }
-
-    // BLOCK
-    private static Block registerOceaniteBlock(String name, BlockBehaviour.Properties properties) {
-        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name));
-        Block registeredBlock = Registry.register(
-                BuiltInRegistries.BLOCK,
-                blockKey,
-                new Block(properties.setId(blockKey))
-        );
-
-        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
-        Registry.register(
-                BuiltInRegistries.ITEM,
-                itemKey,
-                new BlockItem(registeredBlock, new Item.Properties().setId(itemKey))
-        );
-        return registeredBlock;
-    }
 }
-
-
 

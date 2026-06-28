@@ -1,5 +1,7 @@
 {
-  "item.betterbalance.oceanite_block": "Block of Oceanite",
+  "block.betterbalance.oceanite_block": "Oceanite Block",
+  "item.betterbalance.oceanite_block": "Oceanite Block",
+
   "item.betterbalance.oceanite_ingot": "Oceanite Ingot",
 
   "item.betterbalance.armor.oceanite_inventory_helmet": "Oceanite Helmet",

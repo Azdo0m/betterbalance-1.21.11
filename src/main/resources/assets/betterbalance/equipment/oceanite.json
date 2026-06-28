@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "betterbalance:oceanite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "betterbalance:oceanite_leggings"
+      }
+    ]
+  }
+}

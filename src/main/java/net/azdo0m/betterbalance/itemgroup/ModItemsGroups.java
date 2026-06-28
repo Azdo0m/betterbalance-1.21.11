@@ -1,5 +1,6 @@
 package net.azdo0m.betterbalance.itemgroup;
 
+import net.azdo0m.betterbalance.block.ModBlock;
 import net.azdo0m.betterbalance.item.ModArmor;
 import net.azdo0m.betterbalance.item.ModItems;
 import net.azdo0m.betterbalance.item.ModOceanite;
@@ -12,7 +13,7 @@ public class ModItemsGroups {
 
         // BLOCKS
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register(content -> {
-            content.addAfter(Items.NETHERITE_BLOCK, ModOceanite.OCEANITE_BLOCK);
+            content.addAfter(Items.NETHERITE_BLOCK, ModBlock.OCEANITE_BLOCK);
         });
 
         // INGREDIENTS

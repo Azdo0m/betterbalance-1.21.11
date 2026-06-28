@@ -21,33 +21,33 @@ public class ModArmor {
 
     //HELMET
     public static final Item OCEANITE_HELMET = register(
-            "oceanite_helmet",
+            "armor/oceanite_inventory_helmet",
             Item::new,
-            new Item.Properties().humanoidArmor(OceaniteArmorMaterial.INSTANCE, ArmorType.HELMET)
-                    .durability(ArmorType.HELMET.getDurability(OceaniteArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(ModArmorMaterial.OCEANITE, ArmorType.HELMET)
+                    .durability(ArmorType.HELMET.getDurability(ModArmorMaterial.BASE_DURABILITY))
     );
 
     //CHESTPLATE
     public static final Item OCEANITE_CHESTPLATE = register(
-            "oceanite_chestplate",
+            "armor/oceanite_inventory_chestplate",
             Item::new,
-            new Item.Properties().humanoidArmor(OceaniteArmorMaterial.INSTANCE, ArmorType.CHESTPLATE)
-                    .durability(ArmorType.CHESTPLATE.getDurability(OceaniteArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(ModArmorMaterial.OCEANITE, ArmorType.CHESTPLATE)
+                    .durability(ArmorType.CHESTPLATE.getDurability(ModArmorMaterial.BASE_DURABILITY))
     );
 
     //LEGGINGS
     public static final Item OCEANITE_LEGGINGS = register(
-            "oceanite_leggings",
+            "armor/oceanite_inventory_leggings",
             Item::new,
-            new Item.Properties().humanoidArmor(OceaniteArmorMaterial.INSTANCE, ArmorType.LEGGINGS)
-                    .durability(ArmorType.LEGGINGS.getDurability(OceaniteArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(ModArmorMaterial.OCEANITE, ArmorType.LEGGINGS)
+                    .durability(ArmorType.LEGGINGS.getDurability(ModArmorMaterial.BASE_DURABILITY))
     );
     //BOOTS
     public static final Item OCEANITE_BOOTS = register(
-            "oceanite_boots",
+            "armor/oceanite_inventory_boots",
             Item::new,
-            new Item.Properties().humanoidArmor(OceaniteArmorMaterial.INSTANCE, ArmorType.BOOTS)
-                    .durability(ArmorType.BOOTS.getDurability(OceaniteArmorMaterial.BASE_DURABILITY))
+            new Item.Properties().humanoidArmor(ModArmorMaterial.OCEANITE, ArmorType.BOOTS)
+                    .durability(ArmorType.BOOTS.getDurability(ModArmorMaterial.BASE_DURABILITY))
     );
 }
 

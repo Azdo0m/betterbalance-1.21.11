@@ -1,6 +1,8 @@
 package net.azdo0m.betterbalance;
 
-import net.azdo0m.betterbalance.block.ModBlocks;
+import net.azdo0m.betterbalance.block.ModBlock;
+import net.azdo0m.betterbalance.item.ModArmor;
+import net.azdo0m.betterbalance.item.ModArmorMaterial;
 import net.azdo0m.betterbalance.item.ModItems;
 import net.azdo0m.betterbalance.itemgroup.ModItemsGroups;
 import net.azdo0m.betterbalance.item.ModOceanite;
@@ -22,9 +24,14 @@ public class BetterBalance implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModBlock.registerModBlock();
+		ModArmor.registerModArmors();
+		ModArmorMaterial.registerModArmorMaterial();
 		ModItems.registerModItems();
 		ModItemsGroups.registerModItems();
-		ModBlocks.registerModBlocks();
+
+
+
 
 
 		ModOceanite.registerOceanite();
