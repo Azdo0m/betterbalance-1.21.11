@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "betterbalance:oceanite_block"
-  ]
+  "values": ["betterbalance:oceanite_block"]
 }

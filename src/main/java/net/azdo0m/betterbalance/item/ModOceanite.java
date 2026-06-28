@@ -10,30 +10,31 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+
 import static net.azdo0m.betterbalance.BetterBalance.MOD_ID;
-import static net.minecraft.world.item.Items.registerBlock;
 
 public class ModOceanite {
     public static void registerOceanite() {
         BetterBalance.LOGGER.info("Registering Oceanite Items for " + MOD_ID);
     }
-        //BLOCKS
-        public static final Block OCEANITE_BLOCK = registerOceaniteBlock("oceanite_block",
-                BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)
-        );
 
-        // INGREDIENTS
-    public static final Item OCEANITE_INGOT = register("oceanite_ingot");
-        // ARMOR
-    public static final Item OCEANITE_HELMET = register("armor/oceanite_inventory_helmet");
-    public static final Item OCEANITE_CHESTPLATE = register("armor/oceanite_inventory_chestplate");
-    public static final Item OCEANITE_LEGGINGS = register("armor/oceanite_inventory_leggings");
-    public static final Item OCEANITE_BOOTS = register("armor/oceanite_inventory_boots");
-        // WEAPONS
+    //BLOCKS
+    public static final Block OCEANITE_BLOCK = registerOceaniteBlock("oceanite_block",
+
+    );
+    // INGREDIENTS
+    //                    .mapColor(MapColor.COLOR_CYAN)
+    //                    .strength(50.0F, 1200.0F)
+    //                    .sound(SoundType.NETHERITE_BLOCK)
+    //                    .requiresCorrectToolForDrops()
+
+    // WEAPONS
     public static final Item OCEANITE_SWORD = register("weapons-tools/oceanite_sword");
     public static final Item OCEANITE_SPEAR = register("weapons-tools/oceanite_spear");
-        // TOOLS
+    // TOOLS
     public static final Item OCEANITE_PICKAXE = register("weapons-tools/oceanite_pickaxe");
     public static final Item OCEANITE_AXE = register("weapons-tools/oceanite_axe");
     public static final Item OCEANITE_SHOVEL = register("weapons-tools/oceanite_shovel");
