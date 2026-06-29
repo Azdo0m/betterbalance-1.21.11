@@ -1,0 +1,141 @@
+.
+├── arborescence.txt
+├── build.gradle
+├── Copie d'écran_20260228_183729.png
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── LICENSE
+├── settings.gradle
+└── src
+    └── main
+        ├── java
+        │   └── net
+        │       └── azdo0m
+        │           └── betterbalance
+        │               ├── BetterBalanceClient.java
+        │               ├── BetterBalanceDataGenerator.java
+        │               ├── BetterBalance.java
+        │               ├── block
+        │               │   └── ModBlock.java
+        │               ├── item
+        │               │   ├── ModArmor.java
+        │               │   ├── ModArmorMaterial.java
+        │               │   ├── ModItems.java
+        │               │   ├── ModOceanite.java
+        │               │   └── ModTools.java
+        │               ├── itemgroup
+        │               │   └── ModItemsGroups.java
+        │               └── mixin
+        │                   ├── anvil
+        │                   │   ├── AnvilLimitMixin.java
+        │                   │   ├── AnvilScreenMixin.java
+        │                   │   └── AnvilWitherMixin.java
+        │                   ├── entities
+        │                   │   ├── MagmaCubeMixin.java
+        │                   │   ├── SpiderMixin.java
+        │                   │   ├── ZoglinMixin.java
+        │                   │   ├── ZombieMixin.java
+        │                   │   └── ZombieNautilusMixin.java
+        │                   ├── ExampleMixin.java
+        │                   ├── items
+        │                   │   ├── ElytraWaterMixin.java
+        │                   │   └── ToolDurabilityMixin.java
+        │                   └── logic
+        │                       ├── EnchantmentHelperMixin.java
+        │                       ├── LibrarianTradeMixin.java
+        │                       └── NetherWoodBurnMixin.java
+        └── resources
+            ├── assets
+            │   └── betterbalance
+            │       ├── blockstates
+            │       │   └── oceanite_block.json
+            │       ├── equipment
+            │       │   └── oceanite.json
+            │       ├── icon.png
+            │       ├── items
+            │       │   ├── armor
+            │       │   │   ├── oceanite_inventory_boots.json
+            │       │   │   ├── oceanite_inventory_chestplate.json
+            │       │   │   ├── oceanite_inventory_helmet.json
+            │       │   │   └── oceanite_inventory_leggings.json
+            │       │   ├── oceanite_block.json
+            │       │   ├── oceanite_ingot.json
+            │       │   └── weapons-tools
+            │       │       ├── oceanite_axe.json
+            │       │       ├── oceanite_hoe.json
+            │       │       ├── oceanite_pickaxe.json
+            │       │       ├── oceanite_shovel.json
+            │       │       ├── oceanite_spear.json
+            │       │       └── oceanite_sword.json
+            │       ├── lang
+            │       │   ├── en_uk.json
+            │       │   ├── en_us.json
+            │       │   └── fr_fr.json
+            │       ├── models
+            │       │   ├── block
+            │       │   │   └── oceanite_block.json
+            │       │   └── item
+            │       │       ├── armor
+            │       │       │   ├── oceanite_inventory_boots.json
+            │       │       │   ├── oceanite_inventory_chestplate.json
+            │       │       │   ├── oceanite_inventory_helmet.json
+            │       │       │   └── oceanite_inventory_leggings.json
+            │       │       ├── oceanite_block.json
+            │       │       ├── oceanite_ingot.json
+            │       │       └── weapons-tools
+            │       │           ├── oceanite_axe.json
+            │       │           ├── oceanite_hoe.json
+            │       │           ├── oceanite_pickaxe.json
+            │       │           ├── oceanite_shovel.json
+            │       │           ├── oceanite_spear.json
+            │       │           └── oceanite_sword.json
+            │       └── textures
+            │           ├── block
+            │           │   └── oceanite_block.png
+            │           ├── entity
+            │           │   └── equipment
+            │           │       ├── humanoid
+            │           │       │   └── oceanite.png
+            │           │       └── humanoid_leggings
+            │           │           └── oceanite_leggings.png
+            │           └── item
+            │               ├── armor
+            │               │   ├── oceanite_inventory_boots.png
+            │               │   ├── oceanite_inventory_chestplate.png
+            │               │   ├── oceanite_inventory_helmet.png
+            │               │   └── oceanite_inventory_leggings.png
+            │               ├── oceanite_ingot.png
+            │               └── weapons-tools
+            │                   ├── aaoceanite_spear.png
+            │                   ├── oceanite_axe.png
+            │                   ├── oceanite_hoe.png
+            │                   ├── oceanite_pickaxe.png
+            │                   ├── oceanite_shovel.png
+            │                   ├── oceanite_spear.png
+            │                   └── oceanite_sword.png
+            ├── betterbalance.mixins.json
+            ├── data
+            │   ├── betterbalance
+            │   │   ├── loot_table
+            │   │   │   └── blocks
+            │   │   │       └── oceanite_block.json
+            │   │   ├── recipe
+            │   │   │   ├── oceanite_block.json
+            │   │   │   └── oceanite_ingot_from_oceanite_block.json
+            │   │   └── tags
+            │   │       └── items
+            │   │           └── repairs_oceanite_armor.json
+            │   └── minecraft
+            │       └── tags
+            │           └── block
+            │               ├── mineable
+            │               │   └── pickaxe.json
+            │               └── needs_diamond_tool.json
+            └── fabric.mod.json
+
+51 directories, 88 files
