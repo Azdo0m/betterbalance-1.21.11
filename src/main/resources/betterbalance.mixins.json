@@ -20,7 +20,8 @@
 
 		"logic.LibrarianTradeMixin",
 		"logic.EnchantmentHelperMixin",
-		"logic.NetherWoodBurnMixin"
+		"logic.NetherWoodBurnMixin",
+		"logic.BeaconScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -9,7 +9,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 
 public class ModItemsGroups {
-    public static void registerModItems(){
+    public static void registerModItemsGroup(){
 
         // BLOCKS
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register(content -> {

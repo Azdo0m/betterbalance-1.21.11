@@ -28,11 +28,7 @@ public class BetterBalance implements ModInitializer {
 		ModArmor.registerModArmors();
 		ModArmorMaterial.registerModArmorMaterial();
 		ModItems.registerModItems();
-		ModItemsGroups.registerModItems();
-
-
-
-
+		ModItemsGroups.registerModItemsGroup();
 
 		ModOceanite.registerOceanite();
 	}
